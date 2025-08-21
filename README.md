@@ -9,4 +9,4 @@
 </head>
 <body>
   <h1>Cassandra Helmick</h1>
-  <nav>
+</body>
