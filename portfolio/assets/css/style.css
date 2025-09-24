@@ -30,6 +30,7 @@ html {
 }
 
 
+
 #tabs{
   position: fixed;
   top: 0;
@@ -69,6 +70,37 @@ body.scrolled #tabs{
   justify-content: center; 
   gap: 50px;
   font-size: 1.5rem;
+
+}
+#home-content{
+  align-items: flex-start;
+  margin: 0 auto;
+   float: right;
+  margin-right: 15px;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Creates two columns, one for the image and one for other content */
+  gap: 30px; /* Adds space between grid items */
+}
+
+
+.self-img {
+  width: 350px;
+  height: 350px;
+  border-radius: 30%;        
+  object-fit: cover;
+  flex-shrink: 0;    
+  float: right;    
+  margin-right: 85px;
+  
+  }
+  img {
+  position: absolute;
+  left: 0;
+  top: 20; 
+  
+    
    
  
 }
