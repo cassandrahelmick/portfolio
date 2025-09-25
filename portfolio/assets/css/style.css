@@ -23,7 +23,9 @@ html {
   font-style: italic;
   position: relative;
   
+  
 }
+
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color:  #F25278;
      
@@ -39,13 +41,14 @@ html {
   z-index: 1000;
   margin-top: 0;
   padding: 30px 0 10px 0;  
-  background: transparent;
+  background: pink;
   transition: background 0.3s ease, box-shadow 0.3s ease;
   display: flex; 
   justify-content: space-between; 
   align-items: center;    
   height: 80px;      
   box-sizing: border-box;
+  
 
 }
 
@@ -69,7 +72,7 @@ body.scrolled #tabs{
   padding: 0;
   display: flex; 
   justify-content: center; 
-  gap: 50px;
+  gap: 30px;
   font-size: 1.5rem;
   
 
@@ -79,6 +82,8 @@ body.scrolled #tabs{
   margin: 0 auto;
    float: right;
   margin-right: 15px;
+ 
+
 }
 .container {
   display: grid;
@@ -89,12 +94,13 @@ body.scrolled #tabs{
 
 .self-img {
   width: 350px;
-  height: 350px;
+  height: 360px;
   border-radius: 30%;        
   object-fit: cover;
   flex-shrink: 0;    
   float: left;    
-  margin-right: 500px;  
+  margin-right: 540px;  
+  
   
   }
  /* img {
@@ -128,7 +134,7 @@ body.scrolled #tabs{
 
 .sectiontab ul li a:hover{
   text-decoration: underline;
-  
+
 }
 
 
@@ -141,4 +147,12 @@ body.scrolled #tabs{
   min-height: 100vh;        
   text-align: center;
   width: 100%;
+  
+}
+.name-sidebar h1 {
+    font-size: 4em; /* Large font size for the name */
+    margin: 0;
+    writing-mode: horizontal-tb; /* Rotates text vertically (right to left) */
+    text-orientation: mixed; 
+    align-items: center;
 }
