@@ -46,6 +46,7 @@ html {
   align-items: center;    
   height: 80px;      
   box-sizing: border-box;
+
 }
 
 .logo img {
@@ -62,7 +63,7 @@ body.scrolled #tabs{
   box-shadow:  0 2px 6px rgba(0,0,0,0.1);
 }
 
-.sectiontab ul, .proj-sec ul{
+.sectiontab ul, .about-sec ul{
   list-style: none;
   margin: 0;
   padding: 0;
@@ -70,6 +71,7 @@ body.scrolled #tabs{
   justify-content: center; 
   gap: 50px;
   font-size: 1.5rem;
+  
 
 }
 #home-content{
@@ -91,11 +93,11 @@ body.scrolled #tabs{
   border-radius: 30%;        
   object-fit: cover;
   flex-shrink: 0;    
-  float: right;    
-  margin-right: 85px;
+  float: left;    
+  margin-right: 500px;  
   
   }
-  img {
+ /* img {
   position: absolute;
   left: 0;
   top: 20; 
@@ -103,7 +105,7 @@ body.scrolled #tabs{
     
    
  
-}
+}*/
 
 #tabs ul{
   animation-duration: 3s;
@@ -111,6 +113,7 @@ body.scrolled #tabs{
   animation-timing-function: ease-out;
   color:#1C1C1C;
   margin: 0 auto;
+  
 }
 
 .sectiontab ul li a{
