@@ -105,6 +105,10 @@ body {
   flex-wrap: wrap; /* responsive */
 }
 
+
+
+
+
 /* LEFT IMAGE WITH NEON PINK GLOW */
 .hero-image img {
    width: 300px;        /* keeps width same as before */
@@ -170,4 +174,85 @@ body {
   .hero-text h2 { font-size: 1.5em; }
   .logo-container img { max-height: 50px; } /* responsive smaller logo */
 }
+/* ABOUT SECTION */
+.about-section {
+  background-color: #ffe6f0;
+  padding: 50px 10%;  /* top padding reduced so it starts at the top */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* align top */
+  min-height: 100vh;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  width: 100%;
+}
+
+/* TEXT CONTENT */
+.about-content {
+  flex: 1;
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* <-- this is new */
+  height: 100%; 
+}
+
+/* HEADING AT THE VERY TOP */
+.about-content h1 {
+  font-size: 2em;
+  color: #c2185b;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.2em;
+  color: #333;
+  line-height: 1.8;
+  max-width: 500px;
+}
+
+/* IMAGE ON THE RIGHT */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 70px;
+  object-fit: cover;
+  box-shadow:
+    0 0 5px #ff69b4,
+    0 0 10px #ff69b4,
+    0 0 20px #ff1493,
+    0 0 30px #ff1493,
+    0 0 40px #ff69b4,
+    0 0 50px #ff69b4;
+  animation: neon-glow 2s infinite alternate;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content h1 {
+    font-size: 1em;
+  }
+
+  .about-image img {
+    max-width: 300px;
+  }
+}
+
+
 
