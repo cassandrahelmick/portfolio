@@ -1,4 +1,4 @@
-/* RESET + FONTS */
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ body {
 }
 
 
-/* NAVBAR */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -57,7 +57,7 @@ body {
   position: relative;
 }
 
-/* DROPDOWN MENU */
+
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -185,7 +185,7 @@ body {
 
 
 
-/* RESPONSIVE */
+
 @media (max-width: 900px) {
   .hero-container, .about-container {
     flex-direction: column;
@@ -198,6 +198,121 @@ body {
 
   .logo-container img { max-height: 50px; }
 }
+/* CONTACT PAGE */
+.contact-section {
+  background-color: #ffe6f0; /* light pink full page */
+  min-height: 100vh;
+  padding-top: 120px; /* keeps content from hiding behind navbar */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact-box {
+  background: white;
+  width: 90%;
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.contact-box h1 {
+  color: #f4386b;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* FORM STYLING */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #f7a8b8;
+  font-size: 1em;
+  font-family: 'Lato', sans-serif;
+}
+
+.contact-form textarea {
+  height: 130px;
+  resize: none;
+}
+
+.contact-form button {
+  background-color: #f4386b;
+  color: white;
+  padding: 12px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #ed6681;
+}
+
+/* Resume Sections starts here :) */
+.resume-format {
+  background-color: #ed6681;
+  border: 3px double #f4386b;
+  margin: 80px auto 30px;
+  width: 85%;                  
+  padding: 30px;
+  color: #ffffff;
+  font-size: 16px;              
+  line-height: 1.5;             
+  box-sizing: border-box;
+}
+
+
+.resume-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.resume-contact {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+
+.resume-section-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+
+.resume-format p {
+  margin-bottom: 12px;
+}
+
+
+.resume-format a {
+  color: #ccbaff;
+  font-weight: bold;
+}
+
+
+
+
+
 
 
 
