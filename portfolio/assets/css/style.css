@@ -19,7 +19,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f4386b; 
+  background-color: #db2d2d; 
   padding: 15px 30px;
   position: fixed;
   top: 0;
@@ -50,7 +50,7 @@ body {
 }
 
 .nav-links a:hover {
-  background-color: #ed6681;
+  background-color: #910404;
   border-radius: 5px;
 }
 .dropdown {
@@ -63,7 +63,7 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #f7a8b8;
+  background-color: #db2d2d;
   list-style: none;
   padding: 10px 0;
   border-radius: 5px;
@@ -82,7 +82,7 @@ body {
 
 /* HERO PROFILE */
 .hero-profile {
-  background-color: #ffe6f0;
+  background-color: #f8ecec;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -101,39 +101,39 @@ body {
   max-width: 275px;
   border-radius: 70px;
   object-fit: cover;
-  box-shadow: 0 0 5px #f4386b, 0 0 10px #f4386b, 0 0 20px #f4386b;
+  box-shadow: 0 0 5px #db2d2d, 0 0 10px #cb0404, 0 0 20px #db2d2d;
   animation: neon-glow 2s infinite alternate;
 }
 
 @keyframes neon-glow {
   0% {
-    box-shadow: 0 0 5px #f4386b, 0 0 10px #f4386b, 0 0 20px #f4386b;
+    box-shadow: 0 0 5px #db2d2d, 0 0 10px #cb0404, 0 0 20px #db2d2d;
   }
   100% {
-    box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #f4386b;
+    box-shadow: 0 0 10px #db2d2d, 0 0 20px #cb0404, 0 0 30px #db2d2d;
   }
 }
 
 .hero-text h1 {
   font-size: 3em;
-  color: #f4386b;
+  color: #db2d2d;
   margin-bottom: 10px;
 }
 
 .hero-text h2 {
   font-size: 2em;
-  color: #f4386b;
+  color: #db2d2d;
   margin-bottom: 15px;
 }
 
 .hero-text p {
   font-size: 1.2em;
-  color: #333;
+  color: #db2d2d;
 }
 
 /* ABOUT SECTION */
 .about-section {
-  background-color: #ffe6f0;
+  background-color: #f8ecec;
   padding: 100px 10%; /* account for fixed navbar */
   display: flex;
   justify-content: center;
@@ -155,14 +155,14 @@ body {
 
 .about-content h1 {
   font-size: 2em;
-  color: #f4386b;
+  color: #db2d2d;
   font-weight: 800;
   margin-bottom: 20px;
 }
 
 .about-content p {
   font-size: 1.2em;
-  color: #333;
+  color: #000000;
   line-height: 1.8;
   max-width: 500px;
 }
@@ -179,7 +179,7 @@ body {
   max-width: 300px;
   border-radius: 70px;
   object-fit: cover;
-  box-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 20px #ff1493;
+  box-shadow: 0 0 5px #db2d2d, 0 0 10px #cb0404, 0 0 20px #db2d2d;
   animation: neon-glow 2s infinite alternate;
 }
 
@@ -200,7 +200,7 @@ body {
 }
 /* CONTACT PAGE */
 .contact-section {
-  background-color: #ffe6f0; /* light pink full page */
+  background-color: #f8ecec; /* light pink full page */
   min-height: 100vh;
   padding-top: 120px; /* keeps content from hiding behind navbar */
   display: flex;
@@ -263,8 +263,8 @@ body {
 
 /* Resume Sections starts here :) */
 .resume-format {
-  background-color: #ed6681;
-  border: 3px double #f4386b;
+  background-color: #db2d2d;
+  border: 3px double #cb0404;
   margin: 80px auto 30px;
   width: 85%;                  
   padding: 30px;
@@ -305,8 +305,61 @@ body {
 
 
 .resume-format a {
-  color: #ccbaff;
+  color: #f7f7f7;
   font-weight: bold;
+}
+
+
+/* Overall page styling */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Cover letter section */
+.cover-letter {
+  max-width: 900px;
+  background: #ffffff;
+  margin: 100px  auto;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-left: 6px solid #db2d2d; /* red accent stripe */
+    /* NEW: makes the box a rectangle */
+  max-height: 520px;  /* adjust to your preference */
+  /* NEW: makes the box a rectangle */
+  /* scroll only inside the box */  /* scroll only inside the box */
+}
+
+/* Heading */
+.cover-letter h2 {
+  color: #db2d2d;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Paragraphs */
+.cover-letter p {
+  line-height: 1.50;
+  font-size: 17px;
+  margin-bottom: 18px;
+}
+
+/* Signature style */
+.cover-letter p:last-child {
+  font-weight: 600;
+  color: #db2d2d;
+  font-size: 20px;
+}
+
+/* Optional: glow effect matching your theme */
+.cover-letter h2 {
+  text-shadow: 0 0 8px rgba(219, 45, 45, 0.4);
 }
 
 
@@ -321,10 +374,10 @@ body {
 #colophon{
   font-size:25px;
   text-align:center;
-background-color:#f4386b;
+background-color:#db2d2d;
   background-repeat:no-repeat;
   background-size:cover;
-  color:#fff;
+  color:#ffffff;
   padding: 28px;
   
 }
