@@ -3,52 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Me</title>
+  <title>Cassandra Helmick Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
-  <nav class="navbar">
-    <div class="logo-container">
-      <img src="assets/img/C (3)-Photoroom.png" alt="Logo">
-    </div>
-    <ul class="nav-links">
-      <li><a href="home.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="coverletter.html">Cover Letter</a></li>
-      <li><a href="accomplishments.html">Accomplishments</a></li>
-      <li><a href="contactme.html">Contact Me</a></li>
-      <li class="dropdown">
-        <a href="#">Work Examples ▼</a>
-        <ul class="dropdown-menu">
-          <li><a href="technical.html">Technical</a></li>
-          <li><a href="creative.html">Creative</a></li>
-          <li><a href="softskills.html">Soft Skills</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+ <nav class="navbar">
+  <div class="logo-container">
+    <img src="assets/img/C (3)-Photoroom.png" alt="Logo">
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="coverletter.html">Cover Letter</a></li>
+    <li><a href="accomplishments.html">Accomplishments</a></li>
+    <li><a href="contactme.html">Contact Me</a></li>
+
+    <li class="dropdown">
+      <a href="#work-examples">Work Examples ▼</a>
+      <ul class="dropdown-menu">
+        <li><a href="#technical">Technical</a></li>
+        <li><a href="#creative">Creative</a></li>
+        <li><a href="#soft">Soft Skills</a></li>
+      </ul>
+    </li>
+
+    <li class="social-icon">
+      <a href="https://www.linkedin.com/in/casaandra-helmick-marie/" 
+         target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/linkedin.png" alt="LinkedIn">
+    
+<li class="social-icon">
+  <a href="mailto:cassihelmick@gmail.com">
+    <img src="assets/img/gmail.png" alt="Gmail">
+  </a>
+</li>
+      </a>
+    </li>
+  </ul>
+</nav>
 
 
-  <section class="contact-section">
-    <div class="contact-box">
-      <h1>Contact Me</h1>
+ <section class="contact-section">
+  <div class="contact-box">
+    <h1>Contact Me</h1>
 
-      <form class="contact-form">
-        <input type="text" placeholder="Name" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Message" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+    <form class="contact-form" action="https://formsubmit.co/cassihelmick@gmail.com" method="POST">
+      
+     
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Message" required></textarea>
+
+    
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <button type="submit">Submit</button>
+    </form>
+
+  </div>
+</section>
+
   </section>
 
-  <footer id="colophon">
-    <h6>&copy; 2025 Cassandra Helmick</h6>
-  </footer>
+  <div id="colophon">
+  <p>Cassandra Helmick</p>
 
+  <div class="footer-icons">
+    <a href="https://www.linkedin.com/in/casaandra-helmick-marie/" target="_blank">
+      <img src="assets/img/linkedin.png" alt="LinkedIn">
+    </a>
+
+    <a href="mailto:cassihelmick@gmail.com">
+      <img src="assets/img/gmail.png" alt="Gmail">
+    </a>
+  </div>
+</div>
+
+  </footer>
 </body>
 </html>
 

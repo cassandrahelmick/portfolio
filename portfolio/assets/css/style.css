@@ -38,7 +38,7 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+ align-items: center;
 }
 
 .nav-links a {
@@ -79,6 +79,39 @@ body {
   padding: 8px 12px;
   color: white;
 }
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+/* Make sure list items display inline */
+.nav-links li {
+  display: flex;
+  align-items: center;
+}
+
+/* LinkedIn icon styling */
+.social-icon img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+
+}
+/* Normal space between menu items */
+.nav-links li {
+  margin-right: 6px;
+}
+
+/* Icons sit close together */
+.nav-links .social-icon {
+  margin-right: -40px; /* adjust as you like */
+  margin-left: 0;
+}
+
 
 /* HERO PROFILE */
 .hero-profile {
@@ -407,5 +440,185 @@ background-color:#db2d2d;
   padding: 28px;
   
 }
+/* Footer Icons */
+.footer-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 12px; /* spacing between icons */
+}
 
+.footer-icons a {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icons img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+
+/* Explore My Work Section */
+.explore-section {
+  text-align: center;
+  padding: 120px 10px 80px;
+  background-color: #f8ecec; /* matches your site */
+}
+
+.explore-section h2 {
+  font-size: 2.5em;
+  color: #db2d2d;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+/* Grid for the 3 cards */
+.work-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Remove link underline and keep card clickable */
+.work-card {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Image container */
+.work-image {
+  position: relative;
+  width: 260px;
+  height: 260px;        /* makes it a square */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* The image itself */
+.work-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Overlay with text (hidden by default) */
+.work-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(219, 45, 45, 0.9); /* red with transparency */
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.work-overlay h3 {
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.work-overlay p {
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+/* Hover effect: image fades + overlay appears */
+.work-image:hover img {
+  opacity: 0.2;
+  transform: scale(1.05);
+}
+
+.work-image:hover .work-overlay {
+  opacity: 1;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 800px) {
+  .work-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-image {
+    width: 80%;
+    max-width: 300px;
+    height: 220px;
+  }
+}
+/* Section */
+.explore-section {
+  text-align: center;
+  padding: 120px 10px 80px;
+  background-color: #f8ecec;
+}
+
+.explore-section h2 {
+  font-size: 2.5em;
+  color: #db2d2d;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+/* Grid */
+.work-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Card Base */
+.work-card.solid-card {
+  width: 260px;
+  height: 260px;
+  background-color: #db2d2d;   /* solid red box */
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Text inside the card */
+.work-overlay-text {
+  text-align: center;
+  padding: 20px;
+}
+
+.work-overlay-text h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.work-overlay-text p {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* Hover effect: red becomes lighter/transparent */
+.work-card.solid-card:hover {
+  background-color: rgba(219, 45, 45, 0.3); /* lighter transparent red */
+  color: #db2d2d; /* text changes to red like the example */
+  font-weight: bold;
+}
 
