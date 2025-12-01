@@ -6,8 +6,8 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  background-color: #ffe6f0; /* light pink */
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f8ecec; /* light pink */
   color: #333;
   scroll-behavior: smooth;
  
@@ -219,7 +219,7 @@ body {
 }
 
 .contact-box h1 {
-  color: #f4386b;
+  color: #db2d2d;
   font-size: 2.5em;
   margin-bottom: 20px;
 }
@@ -236,7 +236,7 @@ body {
   width: 100%;
   padding: 12px;
   border-radius: 10px;
-  border: 2px solid #f7a8b8;
+  border: 2px solid #db2d2d;
   font-size: 1em;
   font-family: 'Lato', sans-serif;
 }
@@ -247,7 +247,7 @@ body {
 }
 
 .contact-form button {
-  background-color: #f4386b;
+  background-color: #db2d2d;
   color: white;
   padding: 12px;
   font-size: 1.1em;
@@ -258,7 +258,7 @@ body {
 }
 
 .contact-form button:hover {
-  background-color: #ed6681;
+  background-color: #db2d2d;
 }
 
 /* Resume Sections starts here :) */
@@ -305,19 +305,12 @@ body {
 
 
 .resume-format a {
-  color: #f7f7f7;
+  color: #f8ecec;
   font-weight: bold;
 }
 
 
-/* Overall page styling */
-body {
-  font-family: "Poppins", Arial, sans-serif;
-  background: #f7f7f7;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
+
 
 /* Cover letter section */
 .cover-letter {
@@ -360,6 +353,39 @@ body {
 /* Optional: glow effect matching your theme */
 .cover-letter h2 {
   text-shadow: 0 0 8px rgba(219, 45, 45, 0.4);
+}
+
+
+
+
+.accomplishments-format {
+  background-color: #db2d2d;             /* soft red */
+  border: 3px double #cb0404;            /* darker red border */
+  width: 85%;
+  max-width: 900px;                      /* makes it look more professional */
+  margin: 100px auto 40px;               /* CENTERED */
+  padding: 30px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.6;
+  border-radius: 10px;                   /* soft rounded corners */
+  box-sizing: border-box;
+}
+
+/* Headings inside accomplishments box */
+.accomplishments-format h2,
+.accomplishments-format h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* List styling */
+.accomplishments-format ul {
+  padding-left: 25px;      /* moves bullets in neatly */
+}
+
+.accomplishments-format li {
+  margin-bottom: 8px;      /* spacing between list items */
 }
 
 
