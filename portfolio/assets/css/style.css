@@ -83,7 +83,7 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 7px;
+  gap: 8px;
 }
 
 /* Make sure list items display inline */
@@ -108,7 +108,7 @@ body {
 
 /* Icons sit close together */
 .nav-links .social-icon {
-  margin-right: -40px; /* adjust as you like */
+  margin-right: -20px; /* adjust as you like */
   margin-left: 0;
 }
 
@@ -621,4 +621,253 @@ background-color:#db2d2d;
   color: #db2d2d; /* text changes to red like the example */
   font-weight: bold;
 }
+
+
+/* Resume Download Button */
+.resume-download-box {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.resume-download-btn {
+  background-color: #dc1515;
+  color: #ffffff;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.resume-download-btn:hover {
+  background-color: #b61919;
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+/* Skills layout */
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.skill-column {
+  width: 250px;
+  text-align: center;
+}
+
+.skill-heading {
+  font-size: 1.08em;       
+  font-weight: 700;         
+  color: #ffffff;          
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;    
+  text-transform: none;     
+  text-decoration: underline;   
+}
+
+/* list items */
+.skill-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-column ul li {
+  margin-bottom: 8px;
+  color: #ffffff; /* white text inside red resume box */
+}
+.database-section {
+  text-align: center;
+  padding: 120px 10px;
+  background-color: #f8ecec;
+}
+
+.database-section h2 {
+  font-size: 2.8em;
+  color: #db2d2d;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* GRID */
+.database-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* CARDS */
+.database-card {
+  width: 320px;
+  padding: 25px;
+  background-color: #db2d2d;
+  color: white;
+  border-radius: 18px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+.database-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+.database-card p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* HOVER EFFECT */
+.database-card:hover {
+  background-color: rgba(219, 45, 45, 0.7);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+/* Make entire database card clickable */
+.database-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.database-card-link:hover .database-card {
+  background-color: rgba(219, 45, 45, 0.7);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+/* --- PROGRAMMING PAGE STYLES --- */
+
+/* Section layout */
+.programming-section {
+  text-align: center;
+  padding: 120px 10px;
+  background-color: #f8ecec;
+}
+
+/* Section title */
+.programming-section h2 {
+  font-size: 2.8em;
+  color: #db2d2d;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* Grid layout */
+.programming-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Card container */
+.programming-card {
+  width: 320px;
+  padding: 25px;
+  background-color: #db2d2d;
+  color: white;
+  border-radius: 18px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+/* Card title */
+.programming-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+/* Paragraph inside card */
+.programming-card p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Make whole card clickable */
+.programming-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+/* Hover effect */
+.programming-card-link:hover .programming-card {
+  background-color: rgba(219, 45, 45, 0.7);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+/* --- WEBSITE PROJECTS PAGE STYLES --- */
+
+/* Section layout */
+.websites-section {
+  text-align: center;
+  padding: 120px 10px;
+  background-color: #f8ecec;
+}
+
+/* Section title */
+.websites-section h2 {
+  font-size: 2.8em;
+  color: #db2d2d;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* Grid layout */
+.websites-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Card container */
+.websites-card {
+  width: 320px;
+  padding: 25px;
+  background-color: #db2d2d;
+  color: white;
+  border-radius: 18px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+/* Card title */
+.websites-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+/* Description text */
+.websites-card p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Make entire card clickable */
+.websites-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+/* Hover effect */
+.websites-card-link:hover .websites-card {
+  background-color: rgba(219, 45, 45, 0.7);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+
+
+
 
